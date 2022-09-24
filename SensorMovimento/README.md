@@ -6,7 +6,7 @@ A lâmpada permanece acesa enquanto o sensor sonoro (PIR) é interrompido em int
 ![image](https://github.com/eduarda-alcantara/IOT-e-Edge-Computing/blob/main/SensorMovimento/blocos.jpg)
 
 ###### Código:
-'
+```
 // C++ code
 //
 int i = 0;
@@ -27,4 +27,4 @@ void loop()
   delay(2000); // Wait for 2000 millisecond(s)
   noTone(5);
 }
-'
+```
