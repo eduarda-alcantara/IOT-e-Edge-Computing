@@ -1,6 +1,7 @@
 ## Sensor de Movimento Intermitente
 
 A lâmpada permanece acesa enquanto o sensor sonoro (PIR) é interrompido em intervalos de 2 segundos.
+![image](https://github.com/eduarda-alcantara/IOT-e-Edge-Computing/blob/main/SensorMovimento/Liga%C3%A7%C3%B5es.jpg)
 
 ###### Blocos:
 ![image](https://github.com/eduarda-alcantara/IOT-e-Edge-Computing/blob/main/SensorMovimento/blocos.jpg)
@@ -28,3 +29,6 @@ void loop()
   noTone(5);
 }
 ```
+
+###### Link para o projeto no Tinkercad:
+https://www.tinkercad.com/things/8xn3T2W0bXe
