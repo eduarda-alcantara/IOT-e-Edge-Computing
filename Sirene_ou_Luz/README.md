@@ -1,30 +1,31 @@
-## Sensor de Movimento Intermitente
+## Sensor de Movimento com Interruptor
 
-A lâmpada permanece acesa enquanto o sensor sonoro (PIR) é interrompido em intervalos de 2 segundos.
+O interruptor deslizante permite escolher qual dos equipamentos será ativado ao detectar movimento (Lâmpada ou Piezo).
 
 ###### Blocos:
-![image](https://github.com/eduarda-alcantara/IOT-e-Edge-Computing/blob/main/SensorMovimento/blocos.jpg)
+![image][(https://github.com/eduarda-alcantara/IOT-e-Edge-Computing/blob/main/SensorMovimento/blocos.jpg)
 
 ###### Código:
 ```
 // C++ code
 //
-int i = 0;
-
 void setup()
 {
-  pinMode(7, INPUT);
+  pinMode(2, INPUT);
   Serial.begin(9600);
-  pinMode(5, OUTPUT);
-  pinMode(4, OUTPUT);
+  pinMode(9, INPUT);
+  pinMode(9, OUTPUT);
+  pinMode(9, OUTPUT);
 }
 
 void loop()
 {
-  Serial.println(digitalRead(7));
-  tone(5, 92, 1000); // play tone 30 (F#2 = 92 Hz)
-  digitalWrite(4, HIGH);
-  delay(2000); // Wait for 2000 millisecond(s)
-  noTone(5);
+  Serial.println(digitalRead(2));
+  if (digitalRead(9) == 1) {
+    tone(9, 523, 1000); // play tone 60 (C5 = 523 Hz)
+  } else {
+    digitalWrite(9, HIGH);
+  }
+  delay(10); // Delay a little bit to improve simulation performance
 }
 ```
