@@ -3,7 +3,7 @@
 O interruptor deslizante permite escolher qual dos equipamentos será ativado ao detectar movimento (Lâmpada ou Piezo).
 
 ###### Blocos:
-![image][(https://github.com/eduarda-alcantara/IOT-e-Edge-Computing/blob/main/SensorMovimento/blocos.jpg)
+![image](https://github.com/eduarda-alcantara/IOT-e-Edge-Computing/blob/main/Sirene_ou_Luz/Blocos.jpg)
 
 ###### Código:
 ```
