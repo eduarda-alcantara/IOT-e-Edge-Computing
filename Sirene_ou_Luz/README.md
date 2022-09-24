@@ -1,6 +1,7 @@
 ## Sensor de Movimento com Interruptor
 
 O interruptor deslizante permite escolher qual dos equipamentos será ativado ao detectar movimento (Lâmpada ou Piezo).
+![image](https://github.com/eduarda-alcantara/IOT-e-Edge-Computing/blob/main/Sirene_ou_Luz/Liga%C3%A7%C3%B5es.jpg)
 
 ###### Blocos:
 ![image](https://github.com/eduarda-alcantara/IOT-e-Edge-Computing/blob/main/Sirene_ou_Luz/Blocos.jpg)
